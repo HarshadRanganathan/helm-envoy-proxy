@@ -2,6 +2,8 @@
 
 Example chart to install envoy proxy in your kubernetes cluster.
 
+Chart Reference - https://github.com/helm/charts/tree/master/stable/envoy
+
 |||
 |--|--|
 |grpc-values.yaml | Sample config for proxying to a GRPC upstream server over TLS|
