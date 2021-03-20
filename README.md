@@ -10,7 +10,7 @@ Chart Reference - https://github.com/helm/charts/tree/master/stable/envoy
 
 ## Install/Upgrade Chart
 
-To install (or) upgrade the chart -
+Sample command to install (or) upgrade the chart -
 
 ```bash
 helm upgrade -i envoy . -n platform --values=configs/grpc-values.yaml
