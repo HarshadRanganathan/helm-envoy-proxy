@@ -38,11 +38,7 @@ service:
     # external-dns.alpha.kubernetes.io/hostname: envoy.cluster.local
     # service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: "true"
     # service.beta.kubernetes.io/aws-load-balancer-internal: "true"
-  ports:
-    n0:
-      port: 10000
-      targetPort: n0
-      protocol: TCP
+  ports: {}
   ## Used to whitelist certain source CIDRs
   # loadBalancerSourceRanges:
   # - 0.0.0.0/0
@@ -50,9 +46,6 @@ service:
 ports:
   admin:
     containerPort: 9901
-    protocol: TCP
-  n0:
-    containerPort: 10000
     protocol: TCP
 
 resources: {}
