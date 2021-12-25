@@ -1,3 +1,15 @@
+service:
+  ports:
+    n0:
+      port: 10000
+      targetPort: n0
+      protocol: TCP
+      
+ports:
+  n0:
+    containerPort: 10000
+    protocol: TCP
+
 files:
   envoy.yaml: |-
     admin:
